@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_incall_manager/flutter_incall_manager.dart';
 import 'package:foreground_service/foreground_service.dart';
 
 void main() {
@@ -39,6 +40,8 @@ void maybeStartFGS() async {
 void foregroundServiceFunction() {
   debugPrint("The current time is: ${DateTime.now()}");
   ForegroundService.notification.setText("The time was: ${DateTime.now()}");
+
+  IncallManager _incallManager = IncallManager();
 
   if (!ForegroundService.isIsolateCommunicationSetup) {
     ForegroundService.setupIsolateCommunication((data) {

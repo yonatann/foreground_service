@@ -8,5 +8,11 @@ build/
 .idea/
 
 *.lock
-
-ios/
+android/.project
+example/android/.project
+android/.settings/
+android/.classpath
+.vscode/launch.json
+example/android/app/.settings/
+example/android/app/.project
+example/android/.settings/

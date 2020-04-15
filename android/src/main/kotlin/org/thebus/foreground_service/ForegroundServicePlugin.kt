@@ -1,6 +1,9 @@
 package org.thebus.foreground_service
 
-import android.app.*
+import android.app.IntentService
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -16,6 +19,7 @@ import io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry
 import io.flutter.plugin.common.*
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import io.flutter.plugin.common.PluginRegistry.PluginRegistrantCallback
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.view.FlutterCallbackInformation
 import io.flutter.view.FlutterMain
